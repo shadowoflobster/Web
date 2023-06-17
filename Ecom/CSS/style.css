@@ -1,0 +1,209 @@
+body{
+  background-color: #ececec;
+}
+header{
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.search{
+  
+  height: 56px;
+  width: 40%;
+  border-radius: 13px;  
+  border-width: 0px;
+  margin: auto;
+  margin-top:50px ;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Cabin;
+  
+  box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2)}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: white; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+
+  #main{
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+#backgroundSwitch{
+    height: 40px;
+    width: 160px;
+    margin-left: 25px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #dfdbdb;
+  }
+
+#backgroundSwitch div{
+  width: 50px;
+  float: left;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  padding: 8px 8px 8px 8px;
+  text-align:center;  
+  border-radius: 10px;
+  color: #363636;
+
+}
+
+#backgroundSwitch div:hover{
+  background-color: #e9e5e5;
+}
+
+#ItemsDiv{
+   
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  margin-top: 50px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  font-size: 10px;
+
+}
+.Item{
+  width: 20%;
+  height: 400px;
+  margin: 40px 25px 40px 25px;
+
+}
+
+.ItemBackground{
+  background-color: white;
+  width: 80%;
+  height: 232px;
+  margin: 16px auto;
+  border-radius: 22px;
+}
+.ItemImage{
+  width: 100%;
+  height: 232px;
+  background-repeat: no-repeat;
+}
+.ItemName, .ItemColor, .ItemPrice{
+  
+  width: fit-content;
+  margin: 0px 0px 20px 10%;
+}
+.ItemName{
+  font-size: 2.5em;
+}
+.ItemColor{
+  font-size: 1.5em;
+  color: #60695C;
+}
+.ItemPrice{
+  font-size:2.5em;
+}
+.ItemAddBtn{
+  height: 34px;
+  width: 34px;
+  background-color: black;
+  display: flex;
+}
+.ItemAddBtn:hover{
+  background-color: #2b2929;
+}
+.PriceAndAdd{
+  display: flex;
+}
+.ItemAddBtn{
+  margin-left: 50%;
+  border-radius: 8px;
+  border: none;
+
+}
+.AddSVG{
+  margin:auto;
+  border: 2px;
+}
+
+.welcomeLetter{
+  width: 400px;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.welcomeHeader1{
+font-size: 30px;
+}
+.welcomeHeader2{
+  font-size: 20px;
+}
+.slider{
+  width: 600px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(../images/20210601_161207-600x400.jpg);
+  animation: slide 20s infinite;
+}
+@keyframes slide{
+  25%{
+    background: url(../images/20210601_161207-600x400.jpg);
+    background-repeat: no-repeat;
+
+  }
+  50%{
+    background: url(../images/02TECHFIX1-articleLarge-v3.webp);
+    background-repeat: no-repeat;
+
+  }
+  75%{
+    background: url(../images/13357957_MCIM02302678_vc_02_jpg.jpg);
+    background-repeat: no-repeat;
+
+  }
+ 100%{
+    background: url(../images/2E-CWW11BK-1-600x400.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+
+
+@media (max-width:1330px) {
+  .ItemsDiv{
+      font-size: 7px;
+  }
+}
+@media (max-width:1024px) {
+  .ItemAddBtn{
+      margin-left: 20%;
+  }
+  
+}
+
+@media (max-width:680px) {
+  .ItemAddBtn{
+      margin-left: 10%;
+  }
+  
+}
